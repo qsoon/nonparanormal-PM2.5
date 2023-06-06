@@ -1,0 +1,12 @@
+observatory_airkorea.csv와 observatory_kma.csv는 에어코리아자료와 기상청자료의 관측소 위치정보를 나타내고, 
+interpolx.rds와 forecast.rds는 train,test 데이터 쌍을 나타냅니다.
+
+-Spatial interpolation성능 측정을 위한 dataset은
+interpol5.rds, interpol10.rds,interpol15.rds이다.
+각 파일은 5개 원소를 갖는 리스트로 구성되어 있으며,
+리스트의 원소는 다시 3개의 원소를 갖는 리스트로 구성되어 있다. 
+이때 이 세개의 원소이름은 train_airkorea와 test 그리고 train_kma이다. 
+이중 test원소를 보면, predPM2.5 column이 NA로 되어 있는데 이부분을 train data로 추정해서 채워야할 부분입니다.
+
+-Forecasting 성능 측정을 위한 dataset은 forecast.rds이고, 앞의 것과 유사한 구조로 되어있습니다.
+

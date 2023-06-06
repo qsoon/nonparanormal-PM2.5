@@ -1,0 +1,11 @@
+observatory_airkorea 설명
+
+-토지타입 계산
+
+환경공간정보서비스에서 polygon 형태의 구역들과 그 구역의 토지타입을 제공합니다. 본 데이터에서는 각 관측소의 위치에서 가장 가까운 polygon을 찾은 후 그 polygon의 타입(type) 및 그 polygon과의 거리(dist)를 제공합니다.
+
+
+
+-고도 계산
+
+Srtm3 방법으로 각 위도경도에 대응되는 고도를 계산하여 elevation column에 기입하였습니다. 위도경도가 가리키는 위치가 ocean area인 경우, -32768값이 기입됩니다.
